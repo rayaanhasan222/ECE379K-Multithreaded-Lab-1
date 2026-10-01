@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.dSYM/
+/starter_files/bench
+/starter_files/test_map
+/starter_files/test_locks
+/starter_files/test_map_tsan
+/starter_files/test_locks_tsan
+/starter_files/core
+/starter_files/core.*
