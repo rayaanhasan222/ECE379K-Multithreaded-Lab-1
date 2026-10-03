@@ -15,6 +15,7 @@
 #include <cstdlib>
 #include <mutex>
 #include <shared_mutex>
+#include <stdexcept>
 #include <thread>
 #include <vector>
 
@@ -178,8 +179,20 @@ int main(void)
 
 #if HAVE_SHARDED
     static_assert(ConcurrentMap<ShardedMap<long, long>, long, long>);
+    {
+        bool rejected = false;
+        try {
+            ShardedMap<long, long> empty(0);
+        } catch (const std::invalid_argument&) {
+            rejected = true;
+        }
+        CHECK(rejected);
+        const ShardedMap<long, long> m(3);
+        CHECK(m.shard_count() == 3);
+    }
     test_all<ShardedMap<long, long>>("ShardedMap<mutex>", true, 16);
     test_all<ShardedMap<long, long>>("ShardedMap<mutex>(1)", true, 1);
+    test_all<ShardedMap<long, long>>("ShardedMap<mutex>(3)", true, 3);
     test_all<ShardedMap<long, long, std::shared_mutex>>(
         "ShardedMap<shared_mutex>", true, 16);
     test_all<ShardedMap<long, long, std::mutex, false>>(

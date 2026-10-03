@@ -32,6 +32,7 @@
 #include <functional>
 #include <map>
 #include <mutex>
+#include <stdexcept>
 #include <vector>
 
 #include "interface.h"
@@ -69,6 +70,89 @@ private:
     // Const operations still acquire the lock and copy values before releasing it.
     mutable std::mutex mutex_;
     std::map<K, V> map_;
+};
+
+template <typename K, typename V, class Lock = std::mutex, bool Padded = true>
+    requires BasicLock<Lock>
+class ShardedMap {
+private:
+    using Map = std::map<K, V>;
+    static constexpr std::size_t NATURAL_ALIGNMENT =
+        alignof(Lock) > alignof(Map) ? alignof(Lock) : alignof(Map);
+    static constexpr std::size_t SHARD_ALIGNMENT =
+        Padded && CACHE_LINE > NATURAL_ALIGNMENT ? CACHE_LINE : NATURAL_ALIGNMENT;
+
+    // Padding separates whole shards, including their locks and map metadata.
+    struct alignas(SHARD_ALIGNMENT) Shard {
+        mutable Lock lock;
+        Map map;
+    };
+    static_assert(!Padded || sizeof(Shard) % CACHE_LINE == 0);
+
+    static std::size_t checked_count(std::size_t count) {
+        if (count == 0) {
+            throw std::invalid_argument("shard count must be positive");
+        }
+        return count;
+    }
+
+public:
+    explicit ShardedMap(std::size_t nshards) : shards_(checked_count(nshards)) {}
+
+    // Shards own locks; their storage and lock identities stay fixed.
+    ShardedMap(const ShardedMap&) = delete;
+    ShardedMap& operator=(const ShardedMap&) = delete;
+    ShardedMap(ShardedMap&&) = delete;
+    ShardedMap& operator=(ShardedMap&&) = delete;
+
+    bool insert(const K& key, const V& value) {
+        auto& shard = shards_[shard_for(key)];
+        std::lock_guard guard(shard.lock);
+        return shard.map.insert_or_assign(key, value).second;
+    }
+
+    bool find(const K& key, V& out) const {
+        const auto& shard = shards_[shard_for(key)];
+        ReadGuard<Lock> guard(shard.lock);
+        const auto it = shard.map.find(key);
+        if (it == shard.map.end()) {
+            return false;
+        }
+        out = it->second;
+        return true;
+    }
+
+    bool erase(const K& key) {
+        auto& shard = shards_[shard_for(key)];
+        std::lock_guard guard(shard.lock);
+        return shard.map.erase(key) != 0;
+    }
+
+    std::size_t size() const {
+        std::vector<std::unique_lock<Lock>> guards;
+        guards.reserve(shards_.size());
+        // A common acquisition order prevents cycles between size() callers.
+        // Single-shard operations never wait while holding another shard lock.
+        for (const auto& shard : shards_) {
+            guards.emplace_back(shard.lock);
+        }
+
+        // With every lock held, the sum describes one consistent map state.
+        std::size_t total = 0;
+        for (const auto& shard : shards_) {
+            total += shard.map.size();
+        }
+        return total;
+    }
+
+    std::size_t shard_count() const noexcept { return shards_.size(); }
+
+private:
+    std::size_t shard_for(const K& key) const {
+        return std::hash<K>{}(key) % shards_.size();
+    }
+
+    std::vector<Shard> shards_;
 };
 
 #endif /* CONCURRENT_MAP_H */

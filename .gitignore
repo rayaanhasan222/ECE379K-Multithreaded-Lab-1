@@ -1,4 +1,5 @@
 .DS_Store
+.ls6-backups/
 __pycache__/
 *.pyc
 *.dSYM/
