@@ -1,0 +1,19 @@
+figure,title,note
+p5_lock_scaling,Part 5 · five-lock throughput on LS6 · N=4096,Median and min–max of 3 runs. Dotted: socket boundary (64); dashed: physical cores (128).
+p5_contention_ls6,Part 5 · one-shard contention · LS6 · 8 threads / 8 cores,One run per condition; no repetition error bars. Counters and operations come from the same machine and run.
+p5_contention_frontera,Part 5 · one-shard contention · Frontera · 8 threads / 8 cores,Median and min–max of 3 runs. Counters and operations come from the same machine and run.
+p5_oversubscription,Part 5 · oversubscription on LS6 · 32 threads / 8 CPUs · N=256,Median and min–max of 3 runs. Busy ≠ useful work. Hardware counts scaled from ~20% running time.
+p5_oversubscription_N4096,Part 5 · oversubscription on LS6 · 32 threads / 8 CPUs · N=4096,One run per lock. Task-clock was not saved: busy fraction cannot be measured for this N. N=256 utilization is supplemental.
+p5_shard_choice,Part 5 · shard-count search on LS6,Median and min–max of 3 runs. N=4096 is the comparison setting; 4096 is the largest tested count.
+p5_collision_model,Part 5 · collision model and measured worker-time estimate,"Left: independent uniform choices, not measured lock overlap. Right: 1000 × T / Mops; not a direct handoff latency."
+p6_mix_shard_matrix,Part 6 · lock throughput across mixes and shard counts · LS6,Median and min–max of 3 runs. Y scales vary by panel. Dotted: 64 cores/socket; dashed: 128 physical cores.
+p6_relative_to_ttas,Part 6 · throughput relative to the exclusive TTAS lock · LS6,Ratios of rounded sweep medians; dashed horizontal line = parity. Use the throughput bands to assess spread.
+p6_repeated_points,Part 6 · independent repeat at high thread counts · LS6 · N=256,Solid + band: follow-up median and min–max. Dashed: original median. Preserve both sets rather than selecting favorable runs.
+p6_reader_writer_roles,Part 6 · 4 writers + 28 readers · LS6,Median and min–max of 3 runs. Component rates have 0.1-Mops/s precision; total uses raw operations and elapsed time.
+p7_bucket_crossover,"Part 7 · hash-table / tree crossover · LS6 · T=1, N=L=4096","Median and min–max of 3 runs. Shaded bracket is between sampled sizes, not an exact crossover threshold."
+p7_chain_length,"Part 7 · chain length and counter cost · LS6 · T=1, L=4096","Six single-run counter points; occupancy approximated as 524,288. Descriptive fits; cycles/miss slope is not isolated miss latency."
+p7_stripe_choice,"Part 7 · hash-table stripe search · LS6 · B=2,097,152",Median and min–max of 3 runs. These results tune L separately from the fixed N=4096 comparison setting.
+p7_padding_throughput,Part 7 · padding throughput · LS6 · N=L=1024,Median and min–max of 3 runs. Dotted: 64 cores/socket; dashed: 128 physical cores.
+p7_padding_effect,Part 7 · relative padding effect and observed spread · LS6,"Dashed = parity. Shading is a min–max ratio envelope, not a confidence interval. N=L=1024."
+p7_padding_counters_frontera,"Part 7 · hash padding counters · Frontera · T=28, L=1024",Median and min–max of 3 runs. Each counter is normalized by its own run; Intel and AMD rows are not pooled.
+p7_padding_counters_ls6,"Part 7 · hash padding counters · LS6 · T=28, L=1024",One run per configuration. Each counter is normalized by its own run; Intel and AMD rows are not pooled.

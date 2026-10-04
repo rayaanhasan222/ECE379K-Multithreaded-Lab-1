@@ -1,0 +1,4 @@
+x,y,slope,intercept,points
+mean_chain_estimate,L1-dcache-load-misses_per_op,0.7557911851020767,4.313540172582144,6
+mean_chain_estimate,cycles_per_op,50.23625133389146,171.27740507390513,6
+L1-dcache-load-misses_per_op,cycles_per_op,66.42574156173174,-113.41783265393548,6

@@ -1,0 +1,4 @@
+Build,Check,Outcome
+Normal TAS,Normal + TSan,Passed (saved validation logs)
+Relaxed TAS,Ordinary tests,Passed
+Relaxed TAS,TSan (map and separate lock test),Data race reported (expected experiment)

@@ -1,0 +1,4 @@
+impl,threads,shards,mix,ops,ms,mops,source
+sharded:ttas,1,4096,80/10/10,10647552,2000,5.323776,measurements/ls6-N4096-20261004-162735/part7/tree_baseline_N4096.txt
+sharded:ttas,1,4096,80/10/10,10648576,2000,5.324287999999999,measurements/ls6-N4096-20261004-162735/part7/tree_baseline_N4096.txt
+sharded:ttas,1,4096,80/10/10,10675200,2000,5.3376,measurements/ls6-N4096-20261004-162735/part7/tree_baseline_N4096.txt

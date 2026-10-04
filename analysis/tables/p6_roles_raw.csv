@@ -1,0 +1,13 @@
+impl,threads,shards,mix,ops,ms,mops,readers,writers,source,lock
+sharded:rw,32,1,roles,16285696,2006,8.118492522432701,8.1,0.0,measurements/ls6-20261004-022544/part6/roles_rw_shards-1.txt,rw
+sharded:rw,32,1,roles,15923200,2006,7.937786640079761,7.9,0.0,measurements/ls6-20261004-022544/part6/roles_rw_shards-1.txt,rw
+sharded:rw,32,1,roles,16308224,2005,8.133777556109726,8.1,0.0,measurements/ls6-20261004-022544/part6/roles_rw_shards-1.txt,rw
+sharded:rwp,32,1,roles,1068032,2006,0.5324187437686939,0.0,0.5,measurements/ls6-20261004-022544/part6/roles_rwp_shards-1.txt,rwp
+sharded:rwp,32,1,roles,1064960,2006,0.5308873379860418,0.0,0.5,measurements/ls6-20261004-022544/part6/roles_rwp_shards-1.txt,rwp
+sharded:rwp,32,1,roles,1057792,2007,0.5270513203786746,0.0,0.5,measurements/ls6-20261004-022544/part6/roles_rwp_shards-1.txt,rwp
+sharded:rw,32,4096,roles,240740352,2002,120.24992607392608,109.7,10.6,measurements/ls6-N4096-20261004-162735/part6/roles_rw_shards-4096.txt,rw
+sharded:rw,32,4096,roles,241034240,2002,120.39672327672328,109.8,10.6,measurements/ls6-N4096-20261004-162735/part6/roles_rw_shards-4096.txt,rw
+sharded:rw,32,4096,roles,241017856,2002,120.38853946053945,109.8,10.6,measurements/ls6-N4096-20261004-162735/part6/roles_rw_shards-4096.txt,rw
+sharded:rwp,32,4096,roles,238587904,2014,118.4646991062562,108.0,10.5,measurements/ls6-N4096-20261004-162735/part6/roles_rwp_shards-4096.txt,rwp
+sharded:rwp,32,4096,roles,242409472,2002,121.08365234765235,110.5,10.6,measurements/ls6-N4096-20261004-162735/part6/roles_rwp_shards-4096.txt,rwp
+sharded:rwp,32,4096,roles,240931840,2002,120.34557442557443,109.8,10.6,measurements/ls6-N4096-20261004-162735/part6/roles_rwp_shards-4096.txt,rwp
