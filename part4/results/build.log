@@ -1,0 +1,3 @@
+make: Entering directory '/home1/11856/tud/Lab1/starter_files'
+g++ -std=c++20 -O2 -Wall -Wextra -pthread -o bench bench.cpp
+make: Leaving directory '/home1/11856/tud/Lab1/starter_files'
