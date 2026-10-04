@@ -1,0 +1,29 @@
+JobId=3487215 JobName=idv27747
+   UserId=srhasan11(912438) GroupId=G-828326(828326) MCS_label=N/A
+   Priority=1305 Nice=0 Account=TRA25006 QOS=qdefault
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:18:18 TimeLimit=00:30:00 TimeMin=N/A
+   SubmitTime=2026-10-03T23:58:10 EligibleTime=2026-10-03T23:58:10
+   AccrueTime=2026-10-03T23:58:10
+   StartTime=2026-10-03T23:58:11 EndTime=2026-10-04T00:28:11 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-03T23:58:11 Scheduler=Main
+   Partition=development AllocNode:Sid=login1:1725758
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=c309-005
+   BatchHost=c309-005
+   NumNodes=1 NumCPUs=128 NumTasks=128 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=128,mem=1M,node=1,billing=128
+   AllocTRES=cpu=128,node=1,billing=128
+   Socks/Node=* NtasksPerN:B:S:C=128:0:*:* CoreSpec=*
+   MinCPUsNode=128 MinMemoryNode=0 MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/home1/11816/srhasan11/.slurm/myjob_srhasan11.1727747
+   WorkDir=/home1/11816/srhasan11
+   StdErr=/home1/11816/srhasan11/.slurm/idv27747.o3487215
+   StdIn=/dev/null
+   StdOut=/home1/11816/srhasan11/.slurm/idv27747.o3487215
+   Power=
+   
+

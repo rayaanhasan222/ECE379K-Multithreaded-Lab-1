@@ -1,0 +1,60 @@
+warm-up 77 ms
+sharded:ttas   T=1   shards=16   mix=80/10/10      6365184 ops    2000 ms      3.2 Mops/s
+warm-up 76 ms
+sharded:ttas   T=1   shards=16   mix=80/10/10      6336512 ops    2000 ms      3.2 Mops/s
+warm-up 75 ms
+sharded:ttas   T=1   shards=16   mix=80/10/10      6365184 ops    2000 ms      3.2 Mops/s
+warm-up 74 ms
+sharded:ttas   T=1   shards=64   mix=80/10/10      6717440 ops    2000 ms      3.4 Mops/s
+warm-up 73 ms
+sharded:ttas   T=1   shards=64   mix=80/10/10      6663168 ops    2000 ms      3.3 Mops/s
+warm-up 73 ms
+sharded:ttas   T=1   shards=64   mix=80/10/10      6622208 ops    2000 ms      3.3 Mops/s
+warm-up 69 ms
+sharded:ttas   T=1   shards=256  mix=80/10/10      7392256 ops    2001 ms      3.7 Mops/s
+warm-up 70 ms
+sharded:ttas   T=1   shards=256  mix=80/10/10      7361536 ops    2001 ms      3.7 Mops/s
+warm-up 69 ms
+sharded:ttas   T=1   shards=256  mix=80/10/10      7435264 ops    2001 ms      3.7 Mops/s
+warm-up 62 ms
+sharded:ttas   T=1   shards=1024 mix=80/10/10      8832000 ops    2000 ms      4.4 Mops/s
+warm-up 61 ms
+sharded:ttas   T=1   shards=1024 mix=80/10/10      8804352 ops    2000 ms      4.4 Mops/s
+warm-up 61 ms
+sharded:ttas   T=1   shards=1024 mix=80/10/10      8841216 ops    2000 ms      4.4 Mops/s
+warm-up 51 ms
+sharded:ttas   T=1   shards=4096 mix=80/10/10     10517504 ops    2000 ms      5.3 Mops/s
+warm-up 51 ms
+sharded:ttas   T=1   shards=4096 mix=80/10/10     10637312 ops    2000 ms      5.3 Mops/s
+warm-up 51 ms
+sharded:ttas   T=1   shards=4096 mix=80/10/10     10616832 ops    2000 ms      5.3 Mops/s
+warm-up 76 ms
+sharded:ttas   T=32  shards=16   mix=80/10/10     37990400 ops    2015 ms     18.9 Mops/s
+warm-up 82 ms
+sharded:ttas   T=32  shards=16   mix=80/10/10     38167552 ops    2014 ms     18.9 Mops/s
+warm-up 83 ms
+sharded:ttas   T=32  shards=16   mix=80/10/10     39503872 ops    2003 ms     19.7 Mops/s
+warm-up 80 ms
+sharded:ttas   T=32  shards=64   mix=80/10/10     85283840 ops    2003 ms     42.6 Mops/s
+warm-up 81 ms
+sharded:ttas   T=32  shards=64   mix=80/10/10     81035264 ops    2025 ms     40.0 Mops/s
+warm-up 81 ms
+sharded:ttas   T=32  shards=64   mix=80/10/10     85246976 ops    2003 ms     42.6 Mops/s
+warm-up 76 ms
+sharded:ttas   T=32  shards=256  mix=80/10/10    129611776 ops    2003 ms     64.7 Mops/s
+warm-up 74 ms
+sharded:ttas   T=32  shards=256  mix=80/10/10    130135040 ops    2002 ms     65.0 Mops/s
+warm-up 76 ms
+sharded:ttas   T=32  shards=256  mix=80/10/10    129235968 ops    2014 ms     64.2 Mops/s
+warm-up 68 ms
+sharded:ttas   T=32  shards=1024 mix=80/10/10    170407936 ops    2003 ms     85.1 Mops/s
+warm-up 68 ms
+sharded:ttas   T=32  shards=1024 mix=80/10/10    171265024 ops    2002 ms     85.5 Mops/s
+warm-up 68 ms
+sharded:ttas   T=32  shards=1024 mix=80/10/10    172141568 ops    2003 ms     86.0 Mops/s
+warm-up 57 ms
+sharded:ttas   T=32  shards=4096 mix=80/10/10    205362176 ops    2003 ms    102.5 Mops/s
+warm-up 57 ms
+sharded:ttas   T=32  shards=4096 mix=80/10/10    205520896 ops    2012 ms    102.2 Mops/s
+warm-up 57 ms
+sharded:ttas   T=32  shards=4096 mix=80/10/10    204980224 ops    2003 ms    102.3 Mops/s

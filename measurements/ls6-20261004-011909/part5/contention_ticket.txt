@@ -1,0 +1,15 @@
+bash perfstat.sh ./bench sharded:ticket 8 1 0-7
+# perf stat -x, -D 200 -e cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,cache-misses,context-switches,cpu-migrations -- taskset -c 0-7 ./bench sharded:ticket 8 1 20
+Events disabled
+warm-up 81 ms
+Events enabled
+sharded:ticket T=8   shards=1    mix=80/10/10     37969920 ops   20002 ms      1.9 Mops/s
+event                                   count         per op
+cycles                           555529794273      1.463e+04
+instructions                     137516782014           3622
+L1-dcache-loads                   49125968826           1294
+L1-dcache-load-misses              1434560732          37.78
+cache-misses                       1116845547          29.41
+context-switches                          216      5.689e-06
+cpu-migrations                              1      2.634e-08
+IPC (instructions/cycles)                              0.248

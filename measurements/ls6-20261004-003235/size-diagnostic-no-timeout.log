@@ -1,0 +1,5 @@
+isolated hash map, 65536 buckets, one mutex: concurrent size(), exact
+1.0s: completed inserts=480 erases=223 size_calls=23509
+2.0s: completed inserts=546 erases=289 size_calls=46633
+3.0s: completed inserts=577 erases=319 size_calls=70168
+4.0s: completed inserts=602 erases=343 size_calls=93647

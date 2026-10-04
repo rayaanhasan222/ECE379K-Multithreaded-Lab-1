@@ -1,0 +1,15 @@
+bash perfstat.sh ./bench sharded:mutex 32 256 0-7
+# perf stat -x, -D 200 -e cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,cache-misses,context-switches,cpu-migrations -- taskset -c 0-7 ./bench sharded:mutex 32 256 20
+Events disabled
+warm-up 79 ms
+Events enabled
+sharded:mutex  T=32  shards=256  mix=80/10/10    336669696 ops   20044 ms     16.8 Mops/s
+event                                   count         per op
+cycles                           534533169001           1588
+instructions                     150894497488          448.2
+L1-dcache-loads                   83957428564          249.4
+L1-dcache-load-misses              9626969785          28.59
+cache-misses                       9056064206           26.9
+context-switches                      2269938       0.006742
+cpu-migrations                             31      9.208e-08
+IPC (instructions/cycles)                              0.282

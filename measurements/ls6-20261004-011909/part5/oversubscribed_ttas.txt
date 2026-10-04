@@ -1,0 +1,15 @@
+bash perfstat.sh ./bench sharded:ttas 32 256 0-7
+# perf stat -x, -D 200 -e cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,cache-misses,context-switches,cpu-migrations -- taskset -c 0-7 ./bench sharded:ttas 32 256 20
+Events disabled
+warm-up 70 ms
+Events enabled
+sharded:ttas   T=32  shards=256  mix=80/10/10     50190336 ops   20056 ms      2.5 Mops/s
+event                                   count         per op
+cycles                           556461420292      1.109e+04
+instructions                      53141098560           1059
+L1-dcache-loads                   17532001414          349.3
+L1-dcache-load-misses               916095662          18.25
+cache-misses                        800698351          15.95
+context-switches                        14590      0.0002907
+cpu-migrations                              4       7.97e-08
+IPC (instructions/cycles)                              0.095

@@ -1,0 +1,29 @@
+JobId=3487368 JobName=idv83965
+   UserId=srhasan11(912438) GroupId=G-828326(828326) MCS_label=N/A
+   Priority=1232 Nice=0 Account=TRA25006 QOS=qdefault
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:13 TimeLimit=00:30:00 TimeMin=N/A
+   SubmitTime=2026-10-04T02:25:30 EligibleTime=2026-10-04T02:25:30
+   AccrueTime=2026-10-04T02:25:30
+   StartTime=2026-10-04T02:25:32 EndTime=2026-10-04T02:55:32 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-04T02:25:32 Scheduler=Main
+   Partition=development AllocNode:Sid=login1:1725758
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=c304-006
+   BatchHost=c304-006
+   NumNodes=1 NumCPUs=128 NumTasks=128 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=128,mem=1M,node=1,billing=128
+   AllocTRES=cpu=128,node=1,billing=128
+   Socks/Node=* NtasksPerN:B:S:C=128:0:*:* CoreSpec=*
+   MinCPUsNode=128 MinMemoryNode=0 MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/home1/11816/srhasan11/.slurm/myjob_srhasan11.2683965
+   WorkDir=/home1/11816/srhasan11/ECE379K-Multithreaded-Lab-1
+   StdErr=/home1/11816/srhasan11/.slurm/idv83965.o3487368
+   StdIn=/dev/null
+   StdOut=/home1/11816/srhasan11/.slurm/idv83965.o3487368
+   Power=
+   
+

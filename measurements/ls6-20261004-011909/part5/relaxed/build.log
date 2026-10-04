@@ -1,0 +1,6 @@
+make: Entering directory '/home1/11816/srhasan11/ECE379K-Multithreaded-Lab-1/measurements/ls6-20261004-011909/part5/relaxed/starter_files'
+g++ -std=c++20 -O2 -Wall -Wextra -pthread -I. -o test_map ../tests/test_map.cpp
+g++ -std=c++20 -O2 -Wall -Wextra -pthread -I. -o test_locks ../tests/test_locks.cpp
+g++ -std=c++20 -O1 -g -fsanitize=thread -pthread -I. -o test_map_tsan ../tests/test_map.cpp
+g++ -std=c++20 -O1 -g -fsanitize=thread -pthread -I. -o test_locks_tsan ../tests/test_locks.cpp
+make: Leaving directory '/home1/11816/srhasan11/ECE379K-Multithreaded-Lab-1/measurements/ls6-20261004-011909/part5/relaxed/starter_files'

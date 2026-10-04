@@ -1,0 +1,15 @@
+bash perfstat.sh ./bench hashed:ttas:nopad 28 1024 0-27
+# perf stat -x, -D 200 -e cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,cache-misses,context-switches,cpu-migrations -- taskset -c 0-27 ./bench hashed:ttas:nopad 28 1024 20
+Events disabled
+warm-up 25 ms
+Events enabled
+hashed:ttas:nopad T=28  shards=1024 mix=80/10/10   1661005824 ops   20026 ms     82.9 Mops/s
+event                                   count         per op
+cycles                          1788581676031           1077
+instructions                     370952362258          223.3
+L1-dcache-loads                  186586446444          112.3
+L1-dcache-load-misses              7875071079          4.741
+cache-misses                       6257395687          3.767
+context-switches                          737      4.437e-07
+cpu-migrations                              6      3.612e-09
+IPC (instructions/cycles)                              0.207

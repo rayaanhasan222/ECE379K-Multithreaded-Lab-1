@@ -1,0 +1,60 @@
+warm-up 77 ms
+sharded:park   T=1   shards=16   mix=80/10/10      6304768 ops    2000 ms      3.2 Mops/s
+warm-up 75 ms
+sharded:park   T=1   shards=16   mix=80/10/10      6321152 ops    2000 ms      3.2 Mops/s
+warm-up 75 ms
+sharded:park   T=1   shards=16   mix=80/10/10      6295552 ops    2000 ms      3.1 Mops/s
+warm-up 73 ms
+sharded:park   T=1   shards=64   mix=80/10/10      6648832 ops    2001 ms      3.3 Mops/s
+warm-up 73 ms
+sharded:park   T=1   shards=64   mix=80/10/10      6625280 ops    2000 ms      3.3 Mops/s
+warm-up 73 ms
+sharded:park   T=1   shards=64   mix=80/10/10      6640640 ops    2000 ms      3.3 Mops/s
+warm-up 69 ms
+sharded:park   T=1   shards=256  mix=80/10/10      7414784 ops    2000 ms      3.7 Mops/s
+warm-up 68 ms
+sharded:park   T=1   shards=256  mix=80/10/10      7307264 ops    2001 ms      3.7 Mops/s
+warm-up 69 ms
+sharded:park   T=1   shards=256  mix=80/10/10      7284736 ops    2000 ms      3.6 Mops/s
+warm-up 61 ms
+sharded:park   T=1   shards=1024 mix=80/10/10      8926208 ops    2000 ms      4.5 Mops/s
+warm-up 61 ms
+sharded:park   T=1   shards=1024 mix=80/10/10      8929280 ops    2000 ms      4.5 Mops/s
+warm-up 61 ms
+sharded:park   T=1   shards=1024 mix=80/10/10      8972288 ops    2000 ms      4.5 Mops/s
+warm-up 50 ms
+sharded:park   T=1   shards=4096 mix=80/10/10     10607616 ops    2000 ms      5.3 Mops/s
+warm-up 51 ms
+sharded:park   T=1   shards=4096 mix=80/10/10     10466304 ops    2000 ms      5.2 Mops/s
+warm-up 55 ms
+sharded:park   T=1   shards=4096 mix=80/10/10     10249216 ops    2000 ms      5.1 Mops/s
+warm-up 75 ms
+sharded:park   T=32  shards=16   mix=80/10/10     31525888 ops    2003 ms     15.7 Mops/s
+warm-up 83 ms
+sharded:park   T=32  shards=16   mix=80/10/10     31032320 ops    2002 ms     15.5 Mops/s
+warm-up 83 ms
+sharded:park   T=32  shards=16   mix=80/10/10     31478784 ops    2002 ms     15.7 Mops/s
+warm-up 81 ms
+sharded:park   T=32  shards=64   mix=80/10/10     81332224 ops    2002 ms     40.6 Mops/s
+warm-up 81 ms
+sharded:park   T=32  shards=64   mix=80/10/10     79755264 ops    2002 ms     39.8 Mops/s
+warm-up 82 ms
+sharded:park   T=32  shards=64   mix=80/10/10     79967232 ops    2002 ms     39.9 Mops/s
+warm-up 76 ms
+sharded:park   T=32  shards=256  mix=80/10/10    127346688 ops    2002 ms     63.6 Mops/s
+warm-up 76 ms
+sharded:park   T=32  shards=256  mix=80/10/10    124709888 ops    2003 ms     62.3 Mops/s
+warm-up 76 ms
+sharded:park   T=32  shards=256  mix=80/10/10    126424064 ops    2002 ms     63.1 Mops/s
+warm-up 68 ms
+sharded:park   T=32  shards=1024 mix=80/10/10    170019840 ops    2002 ms     84.9 Mops/s
+warm-up 67 ms
+sharded:park   T=32  shards=1024 mix=80/10/10    168657920 ops    2002 ms     84.2 Mops/s
+warm-up 68 ms
+sharded:park   T=32  shards=1024 mix=80/10/10    169743360 ops    2002 ms     84.8 Mops/s
+warm-up 58 ms
+sharded:park   T=32  shards=4096 mix=80/10/10    200819712 ops    2002 ms    100.3 Mops/s
+warm-up 58 ms
+sharded:park   T=32  shards=4096 mix=80/10/10    202412032 ops    2003 ms    101.1 Mops/s
+warm-up 56 ms
+sharded:park   T=32  shards=4096 mix=80/10/10    200720384 ops    2003 ms    100.2 Mops/s
