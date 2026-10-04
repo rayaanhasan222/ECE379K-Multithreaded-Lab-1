@@ -1,0 +1,60 @@
+warm-up 85 ms
+sharded:mutex  T=1   shards=16   mix=80/10/10      5550080 ops    2001 ms      2.8 Mops/s
+warm-up 81 ms
+sharded:mutex  T=1   shards=16   mix=80/10/10      5616640 ops    2001 ms      2.8 Mops/s
+warm-up 82 ms
+sharded:mutex  T=1   shards=16   mix=80/10/10      5607424 ops    2000 ms      2.8 Mops/s
+warm-up 78 ms
+sharded:mutex  T=1   shards=64   mix=80/10/10      5947392 ops    2000 ms      3.0 Mops/s
+warm-up 79 ms
+sharded:mutex  T=1   shards=64   mix=80/10/10      5952512 ops    2000 ms      3.0 Mops/s
+warm-up 78 ms
+sharded:mutex  T=1   shards=64   mix=80/10/10      5981184 ops    2001 ms      3.0 Mops/s
+warm-up 75 ms
+sharded:mutex  T=1   shards=256  mix=80/10/10      6389760 ops    2000 ms      3.2 Mops/s
+warm-up 75 ms
+sharded:mutex  T=1   shards=256  mix=80/10/10      6358016 ops    2000 ms      3.2 Mops/s
+warm-up 74 ms
+sharded:mutex  T=1   shards=256  mix=80/10/10      6420480 ops    2000 ms      3.2 Mops/s
+warm-up 64 ms
+sharded:mutex  T=1   shards=1024 mix=80/10/10      7698432 ops    2000 ms      3.8 Mops/s
+warm-up 66 ms
+sharded:mutex  T=1   shards=1024 mix=80/10/10      7784448 ops    2000 ms      3.9 Mops/s
+warm-up 65 ms
+sharded:mutex  T=1   shards=1024 mix=80/10/10      7740416 ops    2000 ms      3.9 Mops/s
+warm-up 54 ms
+sharded:mutex  T=1   shards=4096 mix=80/10/10      9332736 ops    2000 ms      4.7 Mops/s
+warm-up 55 ms
+sharded:mutex  T=1   shards=4096 mix=80/10/10      9297920 ops    2001 ms      4.6 Mops/s
+warm-up 54 ms
+sharded:mutex  T=1   shards=4096 mix=80/10/10      9339904 ops    2000 ms      4.7 Mops/s
+warm-up 84 ms
+sharded:mutex  T=32  shards=16   mix=80/10/10     20380672 ops    2004 ms     10.2 Mops/s
+warm-up 88 ms
+sharded:mutex  T=32  shards=16   mix=80/10/10     20557824 ops    2003 ms     10.3 Mops/s
+warm-up 88 ms
+sharded:mutex  T=32  shards=16   mix=80/10/10     20288512 ops    2003 ms     10.1 Mops/s
+warm-up 86 ms
+sharded:mutex  T=32  shards=64   mix=80/10/10     45565952 ops    2002 ms     22.8 Mops/s
+warm-up 85 ms
+sharded:mutex  T=32  shards=64   mix=80/10/10     45085696 ops    2002 ms     22.5 Mops/s
+warm-up 85 ms
+sharded:mutex  T=32  shards=64   mix=80/10/10     45219840 ops    2002 ms     22.6 Mops/s
+warm-up 79 ms
+sharded:mutex  T=32  shards=256  mix=80/10/10     84504576 ops    2002 ms     42.2 Mops/s
+warm-up 79 ms
+sharded:mutex  T=32  shards=256  mix=80/10/10     84363264 ops    2002 ms     42.1 Mops/s
+warm-up 79 ms
+sharded:mutex  T=32  shards=256  mix=80/10/10     85080064 ops    2002 ms     42.5 Mops/s
+warm-up 72 ms
+sharded:mutex  T=32  shards=1024 mix=80/10/10    132720640 ops    2002 ms     66.3 Mops/s
+warm-up 73 ms
+sharded:mutex  T=32  shards=1024 mix=80/10/10    133173248 ops    2002 ms     66.5 Mops/s
+warm-up 72 ms
+sharded:mutex  T=32  shards=1024 mix=80/10/10    132908032 ops    2002 ms     66.4 Mops/s
+warm-up 60 ms
+sharded:mutex  T=32  shards=4096 mix=80/10/10    172609536 ops    2002 ms     86.2 Mops/s
+warm-up 60 ms
+sharded:mutex  T=32  shards=4096 mix=80/10/10    171921408 ops    2002 ms     85.9 Mops/s
+warm-up 60 ms
+sharded:mutex  T=32  shards=4096 mix=80/10/10    173197312 ops    2002 ms     86.5 Mops/s

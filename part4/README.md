@@ -91,4 +91,5 @@ time per operation under a balanced T-thread load. The latter includes
 waiting, scheduling, and cache effects. Do not label their difference a
 direct measurement of one lock handoff.
 
-No shard count is selected until these measurements are available.
+The downloaded measurements select 4,096 shards for the tested 32-thread
+workload. See `results/analysis.md` for the evidence and limits of this choice.
