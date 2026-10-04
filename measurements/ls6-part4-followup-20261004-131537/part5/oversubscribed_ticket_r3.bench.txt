@@ -1,0 +1,4 @@
+Events disabled
+warm-up 72 ms
+Events enabled
+sharded:ticket T=32  shards=256  mix=80/10/10    140393472 ops   20022 ms      7.0 Mops/s

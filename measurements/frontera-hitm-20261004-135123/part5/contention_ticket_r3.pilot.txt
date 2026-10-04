@@ -1,0 +1,2 @@
+warm-up 126 ms
+sharded:ticket T=8   shards=1    mix=80/10/10      1433600 ops    1011 ms      1.4 Mops/s

@@ -1,0 +1,4 @@
+Events disabled
+warm-up 74 ms
+Events enabled
+sharded:mutex  T=32  shards=256  mix=80/10/10    340976640 ops   20053 ms     17.0 Mops/s

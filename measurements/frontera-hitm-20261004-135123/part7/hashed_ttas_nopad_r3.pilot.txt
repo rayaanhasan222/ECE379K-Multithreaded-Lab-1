@@ -1,0 +1,2 @@
+warm-up 36 ms
+hashed:ttas:nopad T=28  shards=1024 mix=80/10/10     71320576 ops    1001 ms     71.3 Mops/s

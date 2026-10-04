@@ -1,0 +1,4 @@
+Events disabled
+warm-up 74 ms
+Events enabled
+sharded:park   T=32  shards=256  mix=80/10/10    106691584 ops   20025 ms      5.3 Mops/s

@@ -1,0 +1,90 @@
+# lock=ttas T=1 N=16 repeat=1 CPUs=0-0
+warm-up 82 ms
+sharded:ttas   T=1   shards=16   mix=80/10/10      6228992 ops    2001 ms      3.1 Mops/s
+# lock=ttas T=1 N=16 repeat=2 CPUs=0-0
+warm-up 75 ms
+sharded:ttas   T=1   shards=16   mix=80/10/10      6301696 ops    2000 ms      3.2 Mops/s
+# lock=ttas T=1 N=16 repeat=3 CPUs=0-0
+warm-up 75 ms
+sharded:ttas   T=1   shards=16   mix=80/10/10      6330368 ops    2000 ms      3.2 Mops/s
+# lock=ttas T=1 N=64 repeat=1 CPUs=0-0
+warm-up 72 ms
+sharded:ttas   T=1   shards=64   mix=80/10/10      6676480 ops    2000 ms      3.3 Mops/s
+# lock=ttas T=1 N=64 repeat=2 CPUs=0-0
+warm-up 73 ms
+sharded:ttas   T=1   shards=64   mix=80/10/10      6675456 ops    2000 ms      3.3 Mops/s
+# lock=ttas T=1 N=64 repeat=3 CPUs=0-0
+warm-up 73 ms
+sharded:ttas   T=1   shards=64   mix=80/10/10      6653952 ops    2001 ms      3.3 Mops/s
+# lock=ttas T=1 N=256 repeat=1 CPUs=0-0
+warm-up 68 ms
+sharded:ttas   T=1   shards=256  mix=80/10/10      7352320 ops    2001 ms      3.7 Mops/s
+# lock=ttas T=1 N=256 repeat=2 CPUs=0-0
+warm-up 68 ms
+sharded:ttas   T=1   shards=256  mix=80/10/10      7414784 ops    2000 ms      3.7 Mops/s
+# lock=ttas T=1 N=256 repeat=3 CPUs=0-0
+warm-up 67 ms
+sharded:ttas   T=1   shards=256  mix=80/10/10      7383040 ops    2000 ms      3.7 Mops/s
+# lock=ttas T=1 N=1024 repeat=1 CPUs=0-0
+warm-up 61 ms
+sharded:ttas   T=1   shards=1024 mix=80/10/10      8741888 ops    2000 ms      4.4 Mops/s
+# lock=ttas T=1 N=1024 repeat=2 CPUs=0-0
+warm-up 61 ms
+sharded:ttas   T=1   shards=1024 mix=80/10/10      8857600 ops    2000 ms      4.4 Mops/s
+# lock=ttas T=1 N=1024 repeat=3 CPUs=0-0
+warm-up 61 ms
+sharded:ttas   T=1   shards=1024 mix=80/10/10      8840192 ops    2000 ms      4.4 Mops/s
+# lock=ttas T=1 N=4096 repeat=1 CPUs=0-0
+warm-up 51 ms
+sharded:ttas   T=1   shards=4096 mix=80/10/10     10575872 ops    2000 ms      5.3 Mops/s
+# lock=ttas T=1 N=4096 repeat=2 CPUs=0-0
+warm-up 51 ms
+sharded:ttas   T=1   shards=4096 mix=80/10/10     10561536 ops    2000 ms      5.3 Mops/s
+# lock=ttas T=1 N=4096 repeat=3 CPUs=0-0
+warm-up 51 ms
+sharded:ttas   T=1   shards=4096 mix=80/10/10     10643456 ops    2000 ms      5.3 Mops/s
+# lock=ttas T=32 N=16 repeat=1 CPUs=0-31
+warm-up 79 ms
+sharded:ttas   T=32  shards=16   mix=80/10/10     38996992 ops    2015 ms     19.4 Mops/s
+# lock=ttas T=32 N=16 repeat=2 CPUs=0-31
+warm-up 84 ms
+sharded:ttas   T=32  shards=16   mix=80/10/10     39389184 ops    2002 ms     19.7 Mops/s
+# lock=ttas T=32 N=16 repeat=3 CPUs=0-31
+warm-up 85 ms
+sharded:ttas   T=32  shards=16   mix=80/10/10     38401024 ops    2003 ms     19.2 Mops/s
+# lock=ttas T=32 N=64 repeat=1 CPUs=0-31
+warm-up 81 ms
+sharded:ttas   T=32  shards=64   mix=80/10/10     81471488 ops    2015 ms     40.4 Mops/s
+# lock=ttas T=32 N=64 repeat=2 CPUs=0-31
+warm-up 80 ms
+sharded:ttas   T=32  shards=64   mix=80/10/10     53859328 ops    2002 ms     26.9 Mops/s
+# lock=ttas T=32 N=64 repeat=3 CPUs=0-31
+warm-up 82 ms
+sharded:ttas   T=32  shards=64   mix=80/10/10     83873792 ops    2004 ms     41.9 Mops/s
+# lock=ttas T=32 N=256 repeat=1 CPUs=0-31
+warm-up 75 ms
+sharded:ttas   T=32  shards=256  mix=80/10/10    127371264 ops    2015 ms     63.2 Mops/s
+# lock=ttas T=32 N=256 repeat=2 CPUs=0-31
+warm-up 74 ms
+sharded:ttas   T=32  shards=256  mix=80/10/10    128565248 ops    2014 ms     63.8 Mops/s
+# lock=ttas T=32 N=256 repeat=3 CPUs=0-31
+warm-up 77 ms
+sharded:ttas   T=32  shards=256  mix=80/10/10    130103296 ops    2002 ms     65.0 Mops/s
+# lock=ttas T=32 N=1024 repeat=1 CPUs=0-31
+warm-up 71 ms
+sharded:ttas   T=32  shards=1024 mix=80/10/10    169069568 ops    2015 ms     83.9 Mops/s
+# lock=ttas T=32 N=1024 repeat=2 CPUs=0-31
+warm-up 71 ms
+sharded:ttas   T=32  shards=1024 mix=80/10/10    168193024 ops    2004 ms     83.9 Mops/s
+# lock=ttas T=32 N=1024 repeat=3 CPUs=0-31
+warm-up 73 ms
+sharded:ttas   T=32  shards=1024 mix=80/10/10    169168896 ops    2002 ms     84.5 Mops/s
+# lock=ttas T=32 N=4096 repeat=1 CPUs=0-31
+warm-up 56 ms
+sharded:ttas   T=32  shards=4096 mix=80/10/10    203286528 ops    2002 ms    101.5 Mops/s
+# lock=ttas T=32 N=4096 repeat=2 CPUs=0-31
+warm-up 58 ms
+sharded:ttas   T=32  shards=4096 mix=80/10/10    202584064 ops    2003 ms    101.2 Mops/s
+# lock=ttas T=32 N=4096 repeat=3 CPUs=0-31
+warm-up 59 ms
+sharded:ttas   T=32  shards=4096 mix=80/10/10    201365504 ops    2009 ms    100.3 Mops/s

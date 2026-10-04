@@ -1,0 +1,4 @@
+Events disabled
+warm-up 69 ms
+Events enabled
+sharded:ttas   T=32  shards=256  mix=80/10/10     50695168 ops   20093 ms      2.5 Mops/s

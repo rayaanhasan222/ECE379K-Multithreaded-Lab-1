@@ -1,0 +1,20 @@
+# started on Sun Oct  4 13:29:27 2026
+
+
+ Performance counter stats for 'taskset -c 0-7 ./bench sharded:park 32 256 20':
+
+      553968501594      cycles                    #    3.476 GHz                      (20.18%)
+      261315165811      instructions              #    0.47  insn per cycle           (20.18%)
+         159376.13 msec task-clock                #    7.969 CPUs utilized          
+       99652147230      L1-dcache-loads           #  625.264 M/sec                    (20.18%)
+        3483653568      L1-dcache-load-misses     #    3.50% of all L1-dcache accesses  (20.17%)
+        3334249429      cache-misses                                                  (20.17%)
+             80906      context-switches          #  507.642 /sec                   
+                 5      cpu-migrations            #    0.031 /sec                   
+
+      20.000024747 seconds time elapsed
+
+      41.303270000 seconds user
+     117.877219000 seconds sys
+
+

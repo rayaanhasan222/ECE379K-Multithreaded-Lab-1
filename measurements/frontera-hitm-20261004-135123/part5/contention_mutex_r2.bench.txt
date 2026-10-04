@@ -1,0 +1,2 @@
+warm-up 129 ms
+sharded:mutex  T=8   shards=1    mix=80/10/10     21044224 ops   20005 ms      1.1 Mops/s

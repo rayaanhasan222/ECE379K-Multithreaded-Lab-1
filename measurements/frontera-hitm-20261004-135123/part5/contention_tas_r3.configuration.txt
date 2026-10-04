@@ -1,0 +1,1 @@
+IMPL=sharded:tas THREADS=8 SHARDS=1 CPUS=0,2,4,6,8,10,12,14 SECONDS=20 DELAY=228 EVENTS=cycles,instructions,task-clock,L1-dcache-load-misses,mem_load_l3_hit_retired.xsnp_hitm,context-switches
