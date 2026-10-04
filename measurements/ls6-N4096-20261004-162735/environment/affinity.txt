@@ -1,0 +1,1 @@
+pid 1192780's current affinity list: 0-127

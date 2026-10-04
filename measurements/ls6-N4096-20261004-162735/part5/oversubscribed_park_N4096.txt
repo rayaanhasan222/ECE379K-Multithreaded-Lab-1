@@ -1,0 +1,15 @@
+bash perfstat.sh ./bench sharded:park 32 4096 0-7
+# perf stat -x, -D 200 -e cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,cache-misses,context-switches,cpu-migrations -- taskset -c 0-7 ./bench sharded:park 32 4096 20
+Events disabled
+warm-up 52 ms
+Events enabled
+sharded:park   T=32  shards=4096 mix=80/10/10    141248512 ops   20016 ms      7.1 Mops/s
+event                                   count         per op
+cycles                           545541109809           3862
+instructions                     279116226805           1976
+L1-dcache-loads                  111803878163          791.5
+L1-dcache-load-misses              3561422618          25.21
+cache-misses                       3561896506          25.22
+context-switches                        85001      0.0006018
+cpu-migrations                             59      4.177e-07
+IPC (instructions/cycles)                              0.512
