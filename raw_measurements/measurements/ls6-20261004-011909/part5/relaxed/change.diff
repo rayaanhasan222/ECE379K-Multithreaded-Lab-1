@@ -1,0 +1,18 @@
+--- locks.h	2026-10-04 00:00:16.991965217 -0500
++++ /home1/11816/srhasan11/ECE379K-Multithreaded-Lab-1/measurements/ls6-20261004-011909/part5/relaxed/starter_files/locks.h	2026-10-04 01:39:06.610619289 -0500
+@@ -49,13 +49,13 @@
+ class TASLock {
+ public:
+     void lock() noexcept {
+-        while (held_.exchange(true, std::memory_order_acquire)) {
++        while (held_.exchange(true, std::memory_order_relaxed)) {
+             lab1_detail::spin_hint();
+         }
+     }
+ 
+     void unlock() noexcept {
+-        held_.store(false, std::memory_order_release);
++        held_.store(false, std::memory_order_relaxed);
+     }
+ 
+ private:

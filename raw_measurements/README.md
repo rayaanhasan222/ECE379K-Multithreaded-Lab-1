@@ -21,11 +21,15 @@ Included:
   4,096 shards at T=32). The Part 4 thread sweep uses 256 shards; the Part 5
   mutex sweep uses 4,096 shards, so they are distinct datasets.
 - Part 5 N=4096 five-lock sweep, N=4096 oversubscription counters, and all
-  three Frontera contention repetitions.
+  three Frontera contention repetitions, plus the relaxed-ordering experiment
+  logs/statuses and its experimental diff.
 - Part 6 N=1/N=4096 mix sweeps and separate-role measurements.
 - Part 7 N=L=4096 bucket measurements and matching tree baseline, stripe
   search, N=L=1024 padding sweeps, lock-size output, and all three Frontera
   padding-counter repetitions.
+- Machine, affinity, configuration, and source-checksum metadata from each
+  selected partner measurement archive, and source-matched all-parts normal
+  and TSan validation from `measurements/ls6-20261004-011909/`.
 
 The .bench.txt files contain the operation counts needed to normalize their
 matching .perf.txt files. Matching .configuration.txt files preserve affinity,
@@ -41,3 +45,8 @@ all original copies remain available in their source folders.
 INDEX.csv maps every copied input to its report use and original location,
 including separate original and copied paths for the renamed mutex CSVs.
 SHA256SUMS verifies the copies. Neither file modifies the source data.
+
+The submission ZIP also provides canonical `sharded_mutex.csv` aliases in the
+original Part 4/5 directory paths to satisfy the README's harness-filename
+requirement. These aliases are byte-identical to the part-specific copies and
+are covered by the ZIP's `PACKAGE_SHA256SUMS`.
