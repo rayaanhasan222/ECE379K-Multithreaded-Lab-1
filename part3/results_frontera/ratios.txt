@@ -1,0 +1,9 @@
+T=1 L1 misses/op: 24.0001
+T=8 / T=1 cycles/op: 12.8406x
+T=8 / T=1 L1 misses/op: 5.47269x
+T=8 / T=1 instructions/op: 14.1269x
+T=1: HITM/op=0.000163115, context switches/op=5.67554e-08, IPC=0.23918
+T=8: HITM/op=11.2422, context switches/op=0.502106, IPC=0.26314
+T=28: HITM/op=16.0461, context switches/op=0.543472, IPC=0.119156
+
+HITM is a load event, not a direct count of every lock handoff.

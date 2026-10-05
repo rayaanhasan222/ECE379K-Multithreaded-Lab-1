@@ -1,0 +1,3 @@
+DELAY=222 ms
+RUN_SECONDS=30
+EVENTS=cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,cache-misses,mem_load_l3_hit_retired.xsnp_hitm,context-switches,cpu-migrations
