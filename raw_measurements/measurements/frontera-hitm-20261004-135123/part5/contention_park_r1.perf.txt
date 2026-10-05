@@ -1,0 +1,18 @@
+# started on Sun Oct  4 13:57:36 2026
+
+
+ Performance counter stats for 'taskset -c 0,2,4,6,8,10,12,14 ./bench sharded:park 8 1 20':
+
+      476607924491      cycles                    #    3.261 GHz                    
+      111908392112      instructions              #    0.23  insn per cycle         
+         146166.16 msec task-clock                #    7.246 CPUs utilized          
+        2502586189      L1-dcache-load-misses                                       
+         349053902      mem_load_l3_hit_retired.xsnp_hitm #    2.388 M/sec                  
+           2350588      context-switches          #    0.016 M/sec                  
+
+      20.173321224 seconds time elapsed
+
+     111.803962000 seconds user
+      42.002245000 seconds sys
+
+

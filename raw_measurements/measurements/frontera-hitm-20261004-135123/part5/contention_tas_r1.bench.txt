@@ -1,0 +1,2 @@
+warm-up 125 ms
+sharded:tas    T=8   shards=1    mix=80/10/10     23459840 ops   20013 ms      1.2 Mops/s

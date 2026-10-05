@@ -1,0 +1,6 @@
+warm-up 53 ms
+sharded:rw     T=32  shards=4096 mix=roles    rd=109.7 wr=10.6 Mops/s     240740352 ops    2002 ms    120.3 Mops/s
+warm-up 58 ms
+sharded:rw     T=32  shards=4096 mix=roles    rd=109.8 wr=10.6 Mops/s     241034240 ops    2002 ms    120.4 Mops/s
+warm-up 58 ms
+sharded:rw     T=32  shards=4096 mix=roles    rd=109.8 wr=10.6 Mops/s     241017856 ops    2002 ms    120.4 Mops/s

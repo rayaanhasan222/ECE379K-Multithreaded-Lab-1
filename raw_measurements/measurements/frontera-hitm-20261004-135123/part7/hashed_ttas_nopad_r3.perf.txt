@@ -1,0 +1,18 @@
+# started on Sun Oct  4 14:00:46 2026
+
+
+ Performance counter stats for 'taskset -c 0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54 ./bench hashed:ttas:nopad 28 1024 20':
+
+     1836275982047      cycles                    #    3.300 GHz                    
+      229665340130      instructions              #    0.13  insn per cycle         
+         556439.70 msec task-clock                #   27.652 CPUs utilized          
+        8798508823      L1-dcache-load-misses                                       
+        1200764935      mem_load_l3_hit_retired.xsnp_hitm #    2.158 M/sec                  
+               346      context-switches          #    0.001 K/sec                  
+
+      20.122719805 seconds time elapsed
+
+     558.643813000 seconds user
+       0.147652000 seconds sys
+
+

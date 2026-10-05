@@ -1,0 +1,2 @@
+warm-up 125 ms
+sharded:park   T=8   shards=1    mix=80/10/10     25573376 ops   20004 ms      1.3 Mops/s

@@ -1,0 +1,60 @@
+warm-up 24 ms
+hashed:ttas    T=1   shards=16   mix=80/10/10     34416640 ops    2000 ms     17.2 Mops/s
+warm-up 27 ms
+hashed:ttas    T=1   shards=16   mix=80/10/10     34473984 ops    2000 ms     17.2 Mops/s
+warm-up 23 ms
+hashed:ttas    T=1   shards=16   mix=80/10/10     34199552 ops    2000 ms     17.1 Mops/s
+warm-up 26 ms
+hashed:ttas    T=1   shards=64   mix=80/10/10     34324480 ops    2000 ms     17.2 Mops/s
+warm-up 24 ms
+hashed:ttas    T=1   shards=64   mix=80/10/10     33364992 ops    2000 ms     16.7 Mops/s
+warm-up 28 ms
+hashed:ttas    T=1   shards=64   mix=80/10/10     33841152 ops    2000 ms     16.9 Mops/s
+warm-up 24 ms
+hashed:ttas    T=1   shards=256  mix=80/10/10     34061312 ops    2000 ms     17.0 Mops/s
+warm-up 26 ms
+hashed:ttas    T=1   shards=256  mix=80/10/10     34338816 ops    2000 ms     17.2 Mops/s
+warm-up 23 ms
+hashed:ttas    T=1   shards=256  mix=80/10/10     34230272 ops    2000 ms     17.1 Mops/s
+warm-up 24 ms
+hashed:ttas    T=1   shards=1024 mix=80/10/10     33714176 ops    2000 ms     16.9 Mops/s
+warm-up 25 ms
+hashed:ttas    T=1   shards=1024 mix=80/10/10     34072576 ops    2000 ms     17.0 Mops/s
+warm-up 24 ms
+hashed:ttas    T=1   shards=1024 mix=80/10/10     34292736 ops    2000 ms     17.1 Mops/s
+warm-up 27 ms
+hashed:ttas    T=1   shards=4096 mix=80/10/10     33179648 ops    2000 ms     16.6 Mops/s
+warm-up 30 ms
+hashed:ttas    T=1   shards=4096 mix=80/10/10     33166336 ops    2000 ms     16.6 Mops/s
+warm-up 28 ms
+hashed:ttas    T=1   shards=4096 mix=80/10/10     33506304 ops    2000 ms     16.8 Mops/s
+warm-up 24 ms
+hashed:ttas    T=32  shards=16   mix=80/10/10     52452352 ops    2002 ms     26.2 Mops/s
+warm-up 25 ms
+hashed:ttas    T=32  shards=16   mix=80/10/10     52729856 ops    2002 ms     26.3 Mops/s
+warm-up 26 ms
+hashed:ttas    T=32  shards=16   mix=80/10/10     52473856 ops    2002 ms     26.2 Mops/s
+warm-up 28 ms
+hashed:ttas    T=32  shards=64   mix=80/10/10    276601856 ops    2002 ms    138.2 Mops/s
+warm-up 27 ms
+hashed:ttas    T=32  shards=64   mix=80/10/10    284107776 ops    2002 ms    141.9 Mops/s
+warm-up 27 ms
+hashed:ttas    T=32  shards=64   mix=80/10/10    271164416 ops    2002 ms    135.5 Mops/s
+warm-up 26 ms
+hashed:ttas    T=32  shards=256  mix=80/10/10    430475264 ops    2002 ms    215.0 Mops/s
+warm-up 26 ms
+hashed:ttas    T=32  shards=256  mix=80/10/10    421520384 ops    2002 ms    210.6 Mops/s
+warm-up 26 ms
+hashed:ttas    T=32  shards=256  mix=80/10/10    426711040 ops    2002 ms    213.2 Mops/s
+warm-up 28 ms
+hashed:ttas    T=32  shards=1024 mix=80/10/10    474201088 ops    2002 ms    236.8 Mops/s
+warm-up 27 ms
+hashed:ttas    T=32  shards=1024 mix=80/10/10    483352576 ops    2002 ms    241.4 Mops/s
+warm-up 27 ms
+hashed:ttas    T=32  shards=1024 mix=80/10/10    478094336 ops    2002 ms    238.8 Mops/s
+warm-up 30 ms
+hashed:ttas    T=32  shards=4096 mix=80/10/10    488372224 ops    2002 ms    243.9 Mops/s
+warm-up 29 ms
+hashed:ttas    T=32  shards=4096 mix=80/10/10    490486784 ops    2002 ms    245.0 Mops/s
+warm-up 30 ms
+hashed:ttas    T=32  shards=4096 mix=80/10/10    489270272 ops    2002 ms    244.4 Mops/s

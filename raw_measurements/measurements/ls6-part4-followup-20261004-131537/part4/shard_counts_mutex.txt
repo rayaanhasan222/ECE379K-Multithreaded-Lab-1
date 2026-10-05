@@ -1,0 +1,90 @@
+# lock=mutex T=1 N=16 repeat=1 CPUs=0-0
+warm-up 79 ms
+sharded:mutex  T=1   shards=16   mix=80/10/10      6057984 ops    2000 ms      3.0 Mops/s
+# lock=mutex T=1 N=16 repeat=2 CPUs=0-0
+warm-up 77 ms
+sharded:mutex  T=1   shards=16   mix=80/10/10      5991424 ops    2000 ms      3.0 Mops/s
+# lock=mutex T=1 N=16 repeat=3 CPUs=0-0
+warm-up 77 ms
+sharded:mutex  T=1   shards=16   mix=80/10/10      6033408 ops    2000 ms      3.0 Mops/s
+# lock=mutex T=1 N=64 repeat=1 CPUs=0-0
+warm-up 75 ms
+sharded:mutex  T=1   shards=64   mix=80/10/10      6242304 ops    2000 ms      3.1 Mops/s
+# lock=mutex T=1 N=64 repeat=2 CPUs=0-0
+warm-up 75 ms
+sharded:mutex  T=1   shards=64   mix=80/10/10      6219776 ops    2000 ms      3.1 Mops/s
+# lock=mutex T=1 N=64 repeat=3 CPUs=0-0
+warm-up 75 ms
+sharded:mutex  T=1   shards=64   mix=80/10/10      6310912 ops    2000 ms      3.2 Mops/s
+# lock=mutex T=1 N=256 repeat=1 CPUs=0-0
+warm-up 71 ms
+sharded:mutex  T=1   shards=256  mix=80/10/10      6706176 ops    2000 ms      3.4 Mops/s
+# lock=mutex T=1 N=256 repeat=2 CPUs=0-0
+warm-up 71 ms
+sharded:mutex  T=1   shards=256  mix=80/10/10      6680576 ops    2000 ms      3.3 Mops/s
+# lock=mutex T=1 N=256 repeat=3 CPUs=0-0
+warm-up 72 ms
+sharded:mutex  T=1   shards=256  mix=80/10/10      6691840 ops    2000 ms      3.3 Mops/s
+# lock=mutex T=1 N=1024 repeat=1 CPUs=0-0
+warm-up 64 ms
+sharded:mutex  T=1   shards=1024 mix=80/10/10      7729152 ops    2000 ms      3.9 Mops/s
+# lock=mutex T=1 N=1024 repeat=2 CPUs=0-0
+warm-up 64 ms
+sharded:mutex  T=1   shards=1024 mix=80/10/10      7753728 ops    2000 ms      3.9 Mops/s
+# lock=mutex T=1 N=1024 repeat=3 CPUs=0-0
+warm-up 64 ms
+sharded:mutex  T=1   shards=1024 mix=80/10/10      7781376 ops    2000 ms      3.9 Mops/s
+# lock=mutex T=1 N=4096 repeat=1 CPUs=0-0
+warm-up 54 ms
+sharded:mutex  T=1   shards=4096 mix=80/10/10      9270272 ops    2000 ms      4.6 Mops/s
+# lock=mutex T=1 N=4096 repeat=2 CPUs=0-0
+warm-up 54 ms
+sharded:mutex  T=1   shards=4096 mix=80/10/10      9361408 ops    2000 ms      4.7 Mops/s
+# lock=mutex T=1 N=4096 repeat=3 CPUs=0-0
+warm-up 54 ms
+sharded:mutex  T=1   shards=4096 mix=80/10/10      9375744 ops    2000 ms      4.7 Mops/s
+# lock=mutex T=32 N=16 repeat=1 CPUs=0-31
+warm-up 81 ms
+sharded:mutex  T=32  shards=16   mix=80/10/10     21274624 ops    2004 ms     10.6 Mops/s
+# lock=mutex T=32 N=16 repeat=2 CPUs=0-31
+warm-up 87 ms
+sharded:mutex  T=32  shards=16   mix=80/10/10     20746240 ops    2003 ms     10.4 Mops/s
+# lock=mutex T=32 N=16 repeat=3 CPUs=0-31
+warm-up 87 ms
+sharded:mutex  T=32  shards=16   mix=80/10/10     21254144 ops    2003 ms     10.6 Mops/s
+# lock=mutex T=32 N=64 repeat=1 CPUs=0-31
+warm-up 85 ms
+sharded:mutex  T=32  shards=64   mix=80/10/10     47731712 ops    2002 ms     23.8 Mops/s
+# lock=mutex T=32 N=64 repeat=2 CPUs=0-31
+warm-up 84 ms
+sharded:mutex  T=32  shards=64   mix=80/10/10     47630336 ops    2002 ms     23.8 Mops/s
+# lock=mutex T=32 N=64 repeat=3 CPUs=0-31
+warm-up 84 ms
+sharded:mutex  T=32  shards=64   mix=80/10/10     49045504 ops    2002 ms     24.5 Mops/s
+# lock=mutex T=32 N=256 repeat=1 CPUs=0-31
+warm-up 80 ms
+sharded:mutex  T=32  shards=256  mix=80/10/10     82318336 ops    2002 ms     41.1 Mops/s
+# lock=mutex T=32 N=256 repeat=2 CPUs=0-31
+warm-up 81 ms
+sharded:mutex  T=32  shards=256  mix=80/10/10     84699136 ops    2002 ms     42.3 Mops/s
+# lock=mutex T=32 N=256 repeat=3 CPUs=0-31
+warm-up 81 ms
+sharded:mutex  T=32  shards=256  mix=80/10/10     85298176 ops    2002 ms     42.6 Mops/s
+# lock=mutex T=32 N=1024 repeat=1 CPUs=0-31
+warm-up 76 ms
+sharded:mutex  T=32  shards=1024 mix=80/10/10    132572160 ops    2002 ms     66.2 Mops/s
+# lock=mutex T=32 N=1024 repeat=2 CPUs=0-31
+warm-up 75 ms
+sharded:mutex  T=32  shards=1024 mix=80/10/10    133825536 ops    2002 ms     66.8 Mops/s
+# lock=mutex T=32 N=1024 repeat=3 CPUs=0-31
+warm-up 75 ms
+sharded:mutex  T=32  shards=1024 mix=80/10/10    133820416 ops    2002 ms     66.8 Mops/s
+# lock=mutex T=32 N=4096 repeat=1 CPUs=0-31
+warm-up 59 ms
+sharded:mutex  T=32  shards=4096 mix=80/10/10    174733312 ops    2002 ms     87.3 Mops/s
+# lock=mutex T=32 N=4096 repeat=2 CPUs=0-31
+warm-up 59 ms
+sharded:mutex  T=32  shards=4096 mix=80/10/10    173565952 ops    2002 ms     86.7 Mops/s
+# lock=mutex T=32 N=4096 repeat=3 CPUs=0-31
+warm-up 59 ms
+sharded:mutex  T=32  shards=4096 mix=80/10/10    173184000 ops    2002 ms     86.5 Mops/s
