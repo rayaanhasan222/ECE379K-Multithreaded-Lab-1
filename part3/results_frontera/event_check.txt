@@ -1,0 +1,18 @@
+
+ Performance counter stats for 'true':
+
+         5,329,380      cycles                                                      
+         4,001,452      instructions              #    0.75  insn per cycle         
+         1,139,441      L1-dcache-loads                                             
+            93,321      L1-dcache-load-misses     #    8.19% of all L1-dcache hits  
+             3,115      cache-misses                                                
+             3,485      mem_load_l3_hit_retired.xsnp_hitm                                   
+                99      context-switches                                            
+                 1      cpu-migrations                                              
+
+       0.006898025 seconds time elapsed
+
+       0.000000000 seconds user
+       0.002728000 seconds sys
+
+

@@ -1,0 +1,14 @@
+bash perfstat.sh ./bench coarse 8 1 
+# perf stat -x, -D 222 -e cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,cache-misses,mem_load_l3_hit_retired.xsnp_hitm,context-switches,cpu-migrations -- taskset -c 0,1,2,3,4,5,6,7 ./bench coarse 8 1 30
+warm-up 124 ms
+coarse         T=8   shards=1    mix=80/10/10     23984128 ops   30004 ms      0.8 Mops/s
+event                                   count         per op
+cycles                           430872937624      1.796e+04
+instructions                     113379967529           4727
+L1-dcache-loads                   31615977709           1318
+L1-dcache-load-misses              3150195890          131.3
+cache-misses                        663376088          27.66
+mem_load_l3_hit_retired.xsnp_hitm        269633305          11.24
+context-switches                     12042586         0.5021
+cpu-migrations                         408039        0.01701
+IPC (instructions/cycles)                              0.263
