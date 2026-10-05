@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('csv', type=Path)
-    parser.add_argument('--machine', choices=['frontera', 'ls6'], default='frontera')
+    parser.add_argument('--machine', choices=['frontera', 'ls6'], default='ls6')
     args = parser.parse_args()
     if args.machine == 'ls6':
         cores, boundary, after_socket, oversubscribed = 128, 64, 96, 192
@@ -44,7 +44,7 @@ def main():
     ax.axvline(boundary, color='0.65', linestyle=':', label=f'Socket boundary: {boundary} cores')
     ax.axvline(cores, color='0.25', linestyle='--', label=f'Physical cores: {cores}')
     ax.set(xlabel='Worker threads', ylabel='Throughput (Mops/s)',
-           title=f'One global mutex — {machine_name} coarse-map sweep',
+           title=f'Throughput (Mops/s) vs ThreadCount — {machine_name}',
            xlim=(0, threads[-1] * 1.04), ylim=(0, max(mops) * 1.15))
     ax.set_xticks([1, expected[4], boundary, after_socket, cores, oversubscribed, threads[-1]])
     ax.grid(axis='y', alpha=0.2)
