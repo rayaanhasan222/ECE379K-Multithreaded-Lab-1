@@ -1,0 +1,2 @@
+warm-up 122 ms
+coarse         T=1   shards=1    mix=80/10/10      1952768 ops    1000 ms      2.0 Mops/s
